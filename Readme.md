@@ -3,27 +3,13 @@
 Design a front-end for an email client that makes API calls to send and receive emails.
 [Details](https://cs50.harvard.edu/web/2020/projects/3/mail/)
 
-https://github.com/BlackSun93/mail/blob/master/mail/templates/mail/inbox.html
-
-Admin
-User: admin
-Pass: Admin!
-
-User1
-User: fabio@example.com
-Pass: fabio
-
-User2
-User: andres@example.com
-Pass: andres
-
 Using JavaScript, HTML, and CSS, complete the implementation of your single-page-app email client. You must fulfill the following requirements:
 
 # 1. Send Mail:
 
 When a user submits the email composition form, add JavaScript code to actually send the email.
 
-ok- You’ll likely want to make a POST request to /emails, passing in values for recipients, subject, and body.
+- You’ll likely want to make a POST request to /emails, passing in values for recipients, subject, and body.
 
 - Once the email has been sent, load the user’s sent mailbox.
 
