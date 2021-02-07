@@ -24,7 +24,6 @@ MarkupSafe==1.1.1
 mccabe==0.6.1
 pexpect==4.8.0
 Pillow==7.2.0
-pipenv==2020.6.2.dev0
 psycopg2-binary==2.8.6
 ptyprocess==0.6.0
 py-moneyed==0.8.0
