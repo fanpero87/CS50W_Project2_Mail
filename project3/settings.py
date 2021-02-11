@@ -83,7 +83,8 @@ DATABASES = {
         'HOST': 'ec2-54-225-190-241.compute-1.amazonaws.com',
         'PORT': 5432,
         'USER': 'wvjfhtjcwtwzjp',
-        'PASSWORD': '74c98c06201e085f79320ef42f310621f077eba40f394b447aa5478e091a4821'
+        'PASSWORD': '74c98c06201e085f79320ef42f310621f077eba40f394b447aa5478e091a4821',
+        'CONN_MAX_AGE': 500
     }
 }
 
