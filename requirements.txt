@@ -8,6 +8,7 @@ Markdown==3.3.3
 markdown2==2.4.0
 MarkupSafe==1.1.1
 psycopg2-binary==2.8.6
+python-decouple==3.4
 Python-dev==2.0.0.dev0
 pytz==2021.1
 sqlparse==0.4.1

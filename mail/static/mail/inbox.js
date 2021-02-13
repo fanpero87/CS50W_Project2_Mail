@@ -183,7 +183,10 @@ function display_email(element) {
   `;
 
   ReplyButton(element); // Creates a Reply Button
-  ArchiveButton(element); // Creates an Archive Button
+  archivediv = document.querySelector("#emails-view").innerHTML;
+  if (archivediv == "<h3>Inbox</h3>") {
+    ArchiveButton(element); // Creates an Archive Button
+  }
 }
 
 function ReplyButton(element) {
@@ -239,7 +242,7 @@ function ArchiveButton(element) {
           archived: true,
         }),
       });
-      load_mailbox("archive");
+      load_mailbox("inbox");
     });
     displayEmailBody.append(archiveButton);
   } else {
