@@ -210,7 +210,15 @@ function ReplyButton(element) {
 
     // prefill fields with information from selected email
     document.querySelector("#compose-recipients").value = `${element.sender}`;
-    document.querySelector("#compose-subject").value = `RE: ${element.subject}`;
+    if (divname == "<h3>Sent</h3>") {
+      rdocument.querySelector(
+        "#compose-subject"
+      ).value = `FWD: ${element.subject}`;
+    } else {
+      document.querySelector(
+        "#compose-subject"
+      ).value = `RE: ${element.subject}`;
+    }
     document.querySelector("#compose-body").value = `---
     ${element.sender} at ${element.timestamp} Wrote: ${element.body}`;
 
@@ -225,7 +233,7 @@ function ReplyButton(element) {
         send_email(recipients, subject, body);
       });
   });
-  displayEmailBody.append(replyButton);
+  // displayEmailBody.append(replyButton);
 }
 
 function ArchiveButton(element) {
