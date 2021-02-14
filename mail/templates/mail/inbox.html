@@ -231,7 +231,7 @@ function display_email(element) {
 
   ReplyButton(element); // Creates a Reply Button
   archivediv = document.querySelector("#emails-view").innerHTML;
-  if (archivediv == "<h3>Inbox</h3>") {
+  if (archivediv !== "<h3>Inbox</h3>") {
     ArchiveButton(element); // Creates an Archive Button
   }
 }
